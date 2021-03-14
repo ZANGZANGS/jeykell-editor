@@ -42,7 +42,7 @@ Connection Pool에서 생성된 Connection의 개수는 한정적입니다. 동�
 
 데이터베이스 애플리케이션을 효율적으로 연결하는 커넥션 풀 라이브러리는 웹 애플리케이션에서는 필수 요소입니다. 웹 애플리케이션 서버로 상용 제품을 사용한다면 보통 제조사에서 제공하는 커넥션 풀 구현체를 사용합니다. 그 외에 오픈소스 라이브러리로 Apache의 Commons DBCP와 Tomcat-JDBC, BoneCP, HikariCP 등이 있습니다.
 
-웹 애플리케이션의 요청은 대부분 DBMS로 연결되기 때문에 커넥션 풀 라이브러리의 설정은 전체 애플리케이션의 성능과 안정성에 영향을 미치는 <code>핵심</code> 입니다.
+웹 애플리케이션의 요청은 대부분 DBMS를 사용되기 때문에 커넥션 풀 라이브러리의 설정은 전체 애플리케이션의 성능과 안정성에 영향을 미치는 **핵심** 입니다.
 
 #### 특징
 - 데이터베이스와 애플리케이션의 일부분에서 발생하는 문제가 전체로 전파되지 않는다.
@@ -68,6 +68,6 @@ JNDI는 디렉터리 서비스에서 제공하는 데이터 및 객체를 발견
 
 ---
 ### Refference
-- https://d2.naver.com/helloworld/1321
-- https://eongeuni.tistory.com/43
-- https://zunoxi.github.io/infra/2020/06/20/infra-db-jdbc/
+- [https://d2.naver.com/helloworld/1321](https://d2.naver.com/helloworld/1321)
+- [https://eongeuni.tistory.com/43](https://eongeuni.tistory.com/43)
+- [https://zunoxi.github.io/infra/2020/06/20/infra-db-jdbc/](https://zunoxi.github.io/infra/2020/06/20/infra-db-jdbc/)
