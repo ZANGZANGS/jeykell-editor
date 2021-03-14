@@ -9,25 +9,27 @@ words_per_minute: 200
 baseurl: /
 
 # Website info
-title: Ghost
-description: The professional publishing platform
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+title:        장장스 블로그
+description:  Backend Developer
+cover:        assets/images/blog-cover.jpg
+logo:         assets/images/blog-icon.png
+logo_dark:    assets/images/favicon.png
+favicon:      assets/images/favicon.png
 CNAME: #add cname for website to be created
+basicthumbnail:   #썸네일 없을 때 사용하는 이미지
 
 # Social info
 navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: tryghost # replace by your username
-facebook: ghost # replace by your username
+twitter:  # replace by your username
+facebook:  # replace by your username
 
 # Disqus
+# 댓글 호스팅 회사
 disqus: False
-disqus_shortname: jekyller # replace with your disqus username
+disqus_shortname:  # replace with your disqus username
 
 # Google Analytics
 google_analytics: UA-69281367-1 # replace with your GA tracking identifier
@@ -67,10 +69,11 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: jekyller
-repo: jasper2
+username: ZANGZANGS
+repo: zangzangs.github.io
 branch: master
 relative_source: ../jasper2/
+# 쟈킬로 빌드된 소스폴더 경로 지정
 destination: ../github blog/
 production_url:  https://zangzangs.github.io/
 source_url:  https://github.com/ZANGZANGS/zangzangs.github.io/
