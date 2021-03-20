@@ -2,6 +2,10 @@ java:
   name: java
   description: False
   cover: False
+spring:
+  name: spring
+  description: False
+  cover: False
 database:
   name: database
   description: False

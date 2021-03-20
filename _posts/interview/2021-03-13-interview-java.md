@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-thumbnail: 'assets/images/thumbnail/meeting.png'
+thumbnail: 'assets/images/interview/thumbnail/meeting.png'
 cover:
 navigation: True
 title: '[Interview] JAVA'
