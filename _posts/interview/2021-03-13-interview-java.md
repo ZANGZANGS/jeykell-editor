@@ -14,7 +14,7 @@ author: zangzangs
 
 # Java Interview
 ---
->java의 장단점
+> java의 장단점
 - 장점
   - 운영체제에 독립적이다.
     - JVM에서 동작하기 때문에, 특적 운영체제에 종속되지 않는다.
