@@ -1,18 +1,17 @@
 ---
 layout: post
-current: post
-thumbnail: 'assets/images/interview/thumbnail/meeting.png'
-cover:
-navigation: True
 title: '[Interview] CS'
+subtitle: 
+banner:
 date: 2021-03-12 10:18:00
+categories: []
 tags: [interview]
-class: post-template
-subclass: 'post'
 author: zangzangs
+
+# sidebar: [] 사이드 바를 없애고 싶으면 주석 해제
 ---
 
-#CS 기본 지식 관련
+## CS 기본 지식 관련
 ___
 
 > **프로세스와 스레드 차이**

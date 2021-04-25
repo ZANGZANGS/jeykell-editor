@@ -1,18 +1,17 @@
 ---
 layout: post
-current: post
-thumbnail: 
-cover:
-navigation: True
 title: '커넥션 풀을 관리하는 방법, DBCP와 JNDI'
+subtitle: 
+banner:
 date: 2021-03-12 10:18:00
+categories: []
 tags: [java, spring]
-class: post-template
-subclass: 'post'
 author: zangzangs
+
+# sidebar: [] 사이드 바를 없애고 싶으면 주석 해제
 ---
 
-다음 프로젝트 준비를 하다가 커넥션 풀을 DBCP에서 JNDI로 변경한다는 이야기를 들었습니다. 커넥션 풀에 대해서는 알고 있었지만 DBCP와 JNDI에 대해서는 처음 듣는 단어라 생소하여 해당 내용을 찾아봤습니다.
+다음 프로젝트 준비를 하다가 커넥션 풀을 DBCP에서 JNDI로 변경한다는 내용을 들었습니다. 커넥션 풀에 대해서는 알고 있었지만 DBCP와 JNDI에 대해서는 처음 듣는 단어라 생소하여 해당 내용을 찾아봤습니다.
 
 <br>
 

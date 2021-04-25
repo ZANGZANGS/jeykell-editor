@@ -1,14 +1,14 @@
 ---
 layout: post
-current: post
-cover: 'assets/images/waves.jpg'
-navigation: True
 title: 제목을 입력합니다
+subtitle: 
+banner:
 date: 2021-03-12 10:18:00
-tags: fiction
-class: post-template
-subclass: 'post'
+categories: []
+tags: [java, spring]
 author: zangzangs
+
+# sidebar: [] 사이드 바를 없애고 싶으면 주석 해제
 ---
 
 # DBCP(Database Connection Pool)

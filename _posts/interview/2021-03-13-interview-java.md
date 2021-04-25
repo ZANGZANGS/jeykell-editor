@@ -1,15 +1,14 @@
 ---
 layout: post
-current: post
-thumbnail: 'assets/images/interview/thumbnail/meeting.png'
-cover:
-navigation: True
 title: '[Interview] JAVA'
+subtitle: 
+banner:
 date: 2021-03-12 10:18:00
+categories: []
 tags: [interview]
-class: post-template
-subclass: 'post'
 author: zangzangs
+
+# sidebar: [] 사이드 바를 없애고 싶으면 주석 해제
 ---
 
 # Java Interview

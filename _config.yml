@@ -1,99 +1,170 @@
-# Jekyll configuration
-markdown: kramdown
-highlighter: rouge
-paginate: 100 # it will paginate after this number
-language: 'utf-8'
-words_per_minute: 200
+# Welcome to Jekyll!
+#
+# About Theme
+#
+# Yet another theme for elegant writers with modern flat style and beautiful
+# night/dark mode.
+#
+# Website: https://github.com/jeffreytse/jekyll-theme-yat
+#
+# You can do anything you want, including projects for your clients, as long
+# as you mention an attribution back (credit links in footer or project).
+# See the LICENCE file.
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you
+# use 'bundle exec jekyll serve'. If you change this file, please restart
+# the server process.
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+title: Your awesome title
+email: kimjangh94@gmail.com
+author: GitHub User
+copyright: Copyright © 1970-2010
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# Website info
-title:        장장스 블로그
-description:  Backend Developer
-cover:        assets/images/blog-cover.jpg
-logo:         assets/images/blog-icon.png
-logo_dark:    assets/images/favicon.png
-favicon:      assets/images/favicon.png
-CNAME: #add cname for website to be created
-basicthumbnail:   #썸네일 없을 때 사용하는 이미지
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://zangzangs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+favicon: "" # the favicon for your site
 
-# Social info
-navigation: True # show the navbar links
-subscribers: True # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
-twitter:  # replace by your username
-facebook:  # replace by your username
+# Yat date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+yat:
+  # date_format: "%b %d, %Y"
+  date_format: "%Y-%m-%d"
 
-# Disqus
-# 댓글 호스팅 회사
-disqus: False
-disqus_shortname:  # replace with your disqus username
+theme: jekyll-theme-yat
+# If you want more debug log, you can set true
+# debug: false
 
-# Google Analytics
-# google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+# If you don't want transparent header, you can set false
+# header_transparent: true
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:tag
+# Google analytics
+# google_analytics: [Tracking ID]
 
-# Authors' info in `_data/authors.yml`
-# Tags' info in `_data/tags_info.yml`
+# If you want to generate website sitemap, you can set true
+# sitemap: false
 
-# gems and other configs
-plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
+# If you want to change site language, you can set lang option
+# lang: "en"  # default lang is en
 
-feed:
-  path: feed.xml
+# Translate languges
+# langs refer to https://cloud.google.com/translate/docs/languages
+# translate_langs:
+#   - lang: en
+#     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
+#     text: English
+#
+#   - lang: fr
+#     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
+#     text: Franch
+#
+#   - lang: zh-CN
+#     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
+#     text: Chinese(Simple)
+#
+#   - lang: ja
+#     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
+#     text: Japanese
+#
+#   - lang: ko
+#     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
+#     text: Korean
+#
+#   - lang: ru
+#     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
+#     text: Russian
 
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
+# You can choose a theme color
+# Default theme colors as below:
+# coolblack: #090a0b
+# spacegrey: #353535
+# snowwhite: #ffffff
+#
+# theme_color: snowwhite
+#
+# Custom color as below:
+# theme_color: "#882250"
 
-# Settings for building master branch with travis-ci
-# with jekyll-travis
+# Night/Dark mode
+# Default mode is "auto", "auto" is for auto nightshift
+# (19:00 - 07:00), "manual" is for manual toggle, and
+# "on/off" is for default on/off.
+#
+# Whatever the user's choice is, it will supersede the
+# default setting of the site and be kept during the
+# visit (session). Only the dark mode setting is"manual",
+# it will be always kept on every visit (i.e. no matter
+# the browser is closed or not)
+#
+night_mode: "off"
 
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: False
-lsi: False
-username: ZANGZANGS
-repo: zangzangs.github.io
-branch: master
-relative_source: ../jasper2/
-# 쟈킬로 빌드된 소스폴더 경로 지정
+# Code badge setting
+# You can enable or disable the code badge and so on
+# code_badge:
+#   enabled: "true"
+#   color: "#fff"
+#   background_color: "#ff4e00"
+#   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# header_pages:
+#   - index.html
+#   - archives.html
+#   - categories.html
+#   - tags.html
+#   - about.md
+
+# Page default value
+# defaults:
+#   home:
+#     heading: "Your awesome heading"
+#     subheading: "Your awesome subheading"
+#     banner: "Your image url"
+
+# Excerpt size setting
+# excerpt_size: 350
+
+# Pagination setting
+# paginate: 5
+
+# Disqus comments
+# disqus:
+#   shortname: "Your Disqus username"
+
+# Gitment comments
+# gitment:
+#   username: "Your GitHub username"
+#   repo: "The repo to store comments"
+#   client_id: "Your client ID"
+#   client_secret: "Your client secret"
+#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+
+# Build settings
+# highlighter: none
+
+# 컴파일된 파일 목적지 설정 
 destination: ../github blog/
-production_url:  https://zangzangs.github.io/
-source_url:  https://github.com/ZANGZANGS/zangzangs.github.io/
 
+markdown: kramdown
+kmarkdown:
+  input: GFM
 
-exclude:
-  - assets/css
-  - node_modules
-  - vendor
-  - .travis.yml
-  - Gemfile
-  - Gemfile.lock
-  - GHOST.txt
-  - gulpfile.js
-  - LICENSE
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README.md
-  - script.py
-  - changelog.md
-  - "*.Rmd"
-  - .git*
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship
